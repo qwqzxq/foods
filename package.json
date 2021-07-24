@@ -1,0 +1,23 @@
+{
+  "name": "slider_food",
+  "version": "1.0.0",
+  "description": "foods",
+  "main": "index.js",
+  "scripts": {
+    "test": "none command"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none repository"
+  },
+  "keywords": [
+    "foods",
+    "food",
+    "slider"
+  ],
+  "author": "cheban lubomir",
+  "license": "ISC",
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
+  }
+}
