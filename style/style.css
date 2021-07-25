@@ -11,7 +11,7 @@ body {
   display: grid;
   max-width: 1200px;
   max-height: 100vh;
-  margin: 25px auto;
+  margin: 25px 25px auto;
   text-align: center;
   grid-template-columns: 2fr 2fr;
 }
@@ -62,6 +62,48 @@ img {
   }
 }
 
+@media (max-width:560px ) {
+  .container {
+    display: grid;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-columns: 2fr;
+  }
+
+  .container-slider {
+    margin: 10px auto;
+    width: 420px;
+    height: 210px;
+    border-radius: 16px;
+    overflow: hidden;
+    filter:brightness(35%);
+    transition: .6s;
+  }
+}
+
+@media (max-width: 470px) {
+  .container-slider {
+    margin: 10px auto;
+    width: 340px;
+    height: 180px;
+    border-radius: 16px;
+    overflow: hidden;
+    filter:brightness(35%);
+    transition: .6s;
+  }
+}
+
+@media (max-width: 380px) {
+  .container-slider {
+    margin: 10px auto;
+    width: 290px;
+    height: 150px;
+    border-radius: 16px;
+    overflow: hidden;
+    filter:brightness(35%);
+    transition: .6s;
+  }
+}
 
 .modal {
   position: fixed; /* фиксированное положение */
@@ -76,7 +118,7 @@ img {
   -moz-transition: opacity 200ms ease-in;
   transition: opacity 200ms ease-in; /* анимация перехода */
   pointer-events: none; /* элемент невидим для событий мыши */
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 /* при отображении модального окно */
@@ -100,11 +142,13 @@ img {
 }
 /* свойства для блока, содержащего контент модального окна */ 
 .modal-content {
+  margin: 0 auto;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 360px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
