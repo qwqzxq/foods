@@ -324,3 +324,7 @@ position: relative;
     transform: rotate(-180deg) skew(-360deg);
   }
 }
+
+.kkal {
+  font-size: 20px;
+}
