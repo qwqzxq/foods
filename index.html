@@ -11,6 +11,10 @@
 </head>
 <body>
 
+  <div class="loaderArea">
+    <div class="loader"></div>
+ </div>
+
 
     <div class="container">
         <div class="container-slider">
@@ -358,5 +362,13 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src='js/index.js'></script>
+    <script>
+      $(window).on('load', function () {
+        $preloader = $('.loaderArea'),
+          $loader = $preloader.find('.loader');
+        $loader.fadeOut();
+        $preloader.delay(350).fadeOut('slow');
+      });
+    </script>
 </body>
 </html>

@@ -65,9 +65,9 @@ img {
 @media (max-width:560px ) {
   .container {
     display: grid;
-    margin-left: 20px;
-    margin-right: 20px;
     grid-template-columns: 2fr;
+    margin-bottom: 20px;
+    height: 100vh;
   }
 
   .container-slider {
@@ -82,6 +82,13 @@ img {
 }
 
 @media (max-width: 470px) {
+  .container {
+    display: grid;
+    grid-template-columns: 2fr;
+    margin-bottom: 20px;
+    height: 100vh;
+  }
+
   .container-slider {
     margin: 10px auto;
     width: 340px;
@@ -94,6 +101,15 @@ img {
 }
 
 @media (max-width: 380px) {
+  .container {
+    display: grid;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-columns: 2fr;
+    margin-bottom: 20px;
+    height: 100vh;
+  }
+
   .container-slider {
     margin: 10px auto;
     width: 290px;
@@ -245,4 +261,66 @@ position: relative;
 
 .resept-content {
   margin-left: 50px;
+}
+
+
+.loaderArea {
+  background: #151515;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom:0;
+  z-index: 100000;
+}
+
+.loader {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  top: 50%;
+  margin-top: -20px;
+}
+ 
+.loader:before,
+.loader:after {
+  content: "";
+  height: 40px;
+  width: 40px;
+  border: 8px solid rgba(255,255,255,.5);
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+}
+ 
+.loader:before {
+  animation: animate 2s infinite linear;
+}
+ 
+@keyframes animate {
+  0% {
+    transform: rotate(0) skew(0);
+  }
+   
+  100% {
+    transform: rotate(180deg) skew(360deg);
+  }
+}
+ 
+ 
+.loader:after {
+  animation: animate2 2s infinite linear;
+}
+ 
+@keyframes animate2 {
+  0% {
+    transform: rotate(0) skew(0);
+  }
+   
+  100% {
+    transform: rotate(-180deg) skew(-360deg);
+  }
 }

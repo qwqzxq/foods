@@ -1,9 +1,5 @@
 @charset 'UTF-8';
 /* Slider */
-.slick-loading .slick-list
-{
-    background: #fff url('./ajax-loader.gif') center center no-repeat;
-}
 
 /* Icons */
 @font-face
@@ -121,6 +117,7 @@
 
 .slick-dots
 {
+    color: #fff;
     position: absolute;
     bottom: -25px;
 
@@ -136,6 +133,7 @@
 }
 .slick-dots li
 {
+    color: #fff;
     position: relative;
 
     display: inline-block;
@@ -149,6 +147,7 @@
 }
 .slick-dots li button
 {
+    color: #fff;
     font-size: 0;
     line-height: 0;
 
@@ -168,11 +167,13 @@
 .slick-dots li button:hover,
 .slick-dots li button:focus
 {
+    color: #fff;
     outline: none;
 }
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before
 {
+    color: #fff;
     opacity: 1;
 }
 .slick-dots li button:before
